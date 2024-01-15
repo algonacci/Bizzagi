@@ -1,779 +1,992 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- Hotjar Tracking Code for https://bizzagi.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3365934, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <!-- Hotjar End -->
 
-  <!-- Hotjar Tracking Code for https://bizzagi.netlify.app/ -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj =
-        h.hj ||
-        function () {
-          (h.hj.q = h.hj.q || []).push(arguments);
-        };
-      h._hjSettings = { hjid: 3365934, hjsv: 6 };
-      a = o.getElementsByTagName("head")[0];
-      r = o.createElement("script");
-      r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-  </script>
-  <!-- Hotjar End -->
+    <!-- Favicons -->
+    <link href="BIZZAGI.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="BIZZAGI.png" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet" />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Primary Meta Tags -->
+    <title>BIZZAGI</title>
+    <meta name="title" content="BIZZAGI" />
+    <meta name="description" content="Jasa kelola akun sosial media, content & email marketing, FB & IG ads, search engine optimization, data analytics, dan website development" />
+    <meta name="keywords" content="Jasa kelola akun sosial media, content & email marketing, FB & IG ads, search engine optimization, data analytics, dan website development" />
 
-  <!-- Primary Meta Tags -->
-  <title>BIZZAGI</title>
-  <meta name="title" content="BIZZAGI" />
-  <meta name="description"
-    content="Jasa kelola akun sosial media, content & email marketing, FB & IG ads, search engine optimization, data analytics, dan website development" />
-  <meta name="keywords"
-    content="Jasa kelola akun sosial media, content & email marketing, FB & IG ads, search engine optimization, data analytics, dan website development" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bizzagi.com" />
+    <meta property="og:title" content="BIZZAGI" />
+    <meta property="og:description" content="Jasa kelola akun sosial media, content & email marketing, FB & IG ads, search engine optimization, data analytics, dan website development" />
+    <meta property="og:image" content="https://bizzagi.com/assets/img/BIZZAGI.png" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://bizzagi.com" />
-  <meta property="og:title" content="BIZZAGI" />
-  <meta property="og:description"
-    content="Jasa kelola akun sosial media, content & email marketing, FB & IG ads, search engine optimization, data analytics, dan website development" />
-  <meta property="og:image" content="https://bizzagi.com/assets/img/BIZZAGI.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bizzagi.com" />
+    <meta property="twitter:title" content="BIZZAGI" />
+    <meta property="twitter:description" content="Jasa kelola akun sosial media, content & email marketing, FB & IG ads, search engine optimization, data analytics, dan website development" />
+    <meta property="twitter:image" content="https://bizzagi.com/assets/img/BIZZAGI.png" />
+  </head>
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://bizzagi.com" />
-  <meta property="twitter:title" content="BIZZAGI" />
-  <meta property="twitter:description"
-    content="Jasa kelola akun sosial media, content & email marketing, FB & IG ads, search engine optimization, data analytics, dan website development" />
-  <meta property="twitter:image" content="https://bizzagi.com/assets/img/BIZZAGI.png" />
-</head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-lg-between">
+        <h1 class="logo me-auto me-lg-0">
+          <a href="/">Bizzagi<span>.</span></a>
+        </h1>
 
-<body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-lg-between">
-      <h1 class="logo me-auto me-lg-0">
-        <a href="/">Bizzagi<span>.</span></a>
-      </h1>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
+            </li>
+            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li>
-            <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
-          </li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-      <!-- .navbar -->
-
-      <a href="#about" class="get-started-btn scrollto">Get Started</a>
-    </div>
-  </header>
-  <!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container" data-aos="fade-up">
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-        <div class="col-xl-8 col-lg-12">
-          <h1>Powerful Digital Solutions With Bizzagi<span>.</span></h1>
-          <h2>We are team of talented digital marketers</h2>
-        </div>
+        <a href="#about" class="get-started-btn scrollto">Get Started</a>
       </div>
+    </header>
+    <!-- End Header -->
 
-      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line"></i>
-            <h3><a href="">Social Media Marketing</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line"></i>
-            <h3><a href="">Search Engine Optimization</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line"></i>
-            <h3><a href="">Ads Management</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line"></i>
-            <h3><a href="">UI/UX & Graphic Design</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line"></i>
-            <h3><a href="">List Building</a></h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero -->
-
-  <main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
       <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="About Bizzagi" />
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>
-              Empowering Your Digital Presence in Indonesia's Vibrant Market
-            </h3>
-            <p class="fst-italic">
-              At Bizzagi, we blend innovation with expertise to transform your digital strategies. Our team in Jakarta
-              is dedicated to elevating your online presence.
-            </p>
-            <ul>
-              <li>
-                <i class="ri-check-double-line"></i> Tailored digital marketing solutions to meet unique business needs.
-              </li>
-              <li>
-                <i class="ri-check-double-line"></i> Proven expertise in SEO, social media, and creative design.
-              </li>
-              <li>
-                <i class="ri-check-double-line"></i> A commitment to delivering measurable results and enhancing your
-                brand's digital footprint.
-              </li>
-            </ul>
-            <p>
-              Our approach is centered around understanding and fulfilling your digital needs with creativity,
-              precision, and a focus on results.
-            </p>
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-xl-8 col-lg-12">
+            <h1>Powerful Digital Solutions With Bizzagi<span>.</span></h1>
+            <h2>We are team of talented digital marketers</h2>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End About Section -->
 
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-in">
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide">
-              <img src="assets/img/clients/SOUVIA.webp" class="img-fluid" alt="Souvia" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/clients/Optimaxx.png" class="img-fluid" alt="Optimaxx" />
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-    <!-- End Clients Section -->
-
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="image col-lg-6" style="background-image: url('assets/img/features.jpg')" data-aos="fade-right">
-          </div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-receipt"></i>
-              <h4>Customized Strategy</h4>
-              <p>
-                Crafting unique digital strategies tailored to each client’s specific needs and goals.
-              </p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-cube-alt"></i>
-              <h4>Innovative Solutions</h4>
-              <p>
-                Delivering innovative solutions that drive business growth and enhance digital presence.
-              </p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-images"></i>
-              <h4>Creative Design</h4>
-              <p>
-                Offering creative design services that capture your brand’s essence and engage your audience.
-              </p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-shield"></i>
-              <h4>Reliable Support</h4>
-              <p>
-                Providing reliable and continuous support to ensure your digital success.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Features Section -->
-
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Our Expertise</h2>
-          <p>Explore Our Comprehensive Digital Services</p>
-        </div>
-
-        <div class="row">
-          <!-- Service 1 -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+          <div class="col-xl-2 col-md-4">
             <div class="icon-box">
-              <div class="icon">
-                <i class="fa-solid fa-bullhorn"></i>
+              <i class="ri-store-line"></i>
+              <h3><a href="">Social Media Marketing</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="ri-bar-chart-box-line"></i>
+              <h3><a href="">Search Engine Optimization</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="ri-calendar-todo-line"></i>
+              <h3><a href="">Ads Management</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="ri-paint-brush-line"></i>
+              <h3><a href="">UI/UX & Graphic Design</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="ri-database-2-line"></i>
+              <h3><a href="">List Building</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="About Bizzagi" />
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+              <h3>Empowering Your Digital Presence in Indonesia's Vibrant Market</h3>
+              <p class="fst-italic">At Bizzagi, we blend innovation with expertise to transform your digital strategies. Our team in Jakarta is dedicated to elevating your online presence.</p>
+              <ul>
+                <li><i class="ri-check-double-line"></i> Tailored digital marketing solutions to meet unique business needs.</li>
+                <li><i class="ri-check-double-line"></i> Proven expertise in SEO, social media, and creative design.</li>
+                <li><i class="ri-check-double-line"></i> A commitment to delivering measurable results and enhancing your brand's digital footprint.</li>
+              </ul>
+              <p>Our approach is centered around understanding and fulfilling your digital needs with creativity, precision, and a focus on results.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Clients Section ======= -->
+      <section id="clients" class="clients">
+        <div class="container" data-aos="zoom-in">
+          <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="assets/img/clients/SOUVIA.webp" class="img-fluid" alt="Souvia" />
               </div>
-              <h4><a href="">Digital Marketing</a></h4>
-              <p>
-                Elevate your brand with our tailored digital marketing strategies that guarantee impactful results.
-              </p>
-            </div>
-          </div>
-
-          <!-- Service 2 -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-            data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon">
-                <i class="fa-brands fa-searchengin"></i>
+              <div class="swiper-slide">
+                <img src="assets/img/clients/Optimaxx.png" class="img-fluid" alt="Optimaxx" />
               </div>
-              <h4><a href="">SEO Optimization</a></h4>
-              <p>
-                Enhance your online visibility with our expert SEO services, designed to drive traffic and growth.
-              </p>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
+        </div>
+      </section>
+      <!-- End Clients Section -->
 
-          <!-- Service 3 -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-            data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon">
-                <i class="fa-solid fa-earth-americas"></i>
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="image col-lg-6" style="background-image: url('assets/img/features.jpg')" data-aos="fade-right"></div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+              <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                <i class="bx bx-receipt"></i>
+                <h4>Customized Strategy</h4>
+                <p>Crafting unique digital strategies tailored to each client’s specific needs and goals.</p>
               </div>
-              <h4><a href="">Web Development</a></h4>
-              <p>
-                Get cutting-edge websites that offer seamless user experiences, aligning with your brand’s identity.
-              </p>
+              <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Innovative Solutions</h4>
+                <p>Delivering innovative solutions that drive business growth and enhance digital presence.</p>
+              </div>
+              <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                <i class="bx bx-images"></i>
+                <h4>Creative Design</h4>
+                <p>Offering creative design services that capture your brand’s essence and engage your audience.</p>
+              </div>
+              <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                <i class="bx bx-shield"></i>
+                <h4>Reliable Support</h4>
+                <p>Providing reliable and continuous support to ensure your digital success.</p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- End Features Section -->
 
-        <div class="row mt-3">
-          <!-- Service 1 - Advertising Management -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="fa-brands fa-adversal"></i></div>
-              <h4><a href="">Advertising Management</a></h4>
-              <p>Maximize your brand's impact with our comprehensive advertising management services, from strategy to
-                execution.</p>
-            </div>
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Our Expertise</h2>
+            <p>Explore Our Comprehensive Digital Services</p>
           </div>
 
-          <!-- Service 2 - Email Marketing -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-            data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="fa-solid fa-envelope-circle-check"></i></div>
-              <h4><a href="">Email Marketing</a></h4>
-              <p>Engage your audience with targeted, personalized email marketing campaigns that drive results.</p>
-            </div>
-          </div>
-
-          <!-- Service 3 - UI/UX & Graphics Design -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-            data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="fa-solid fa-pen-fancy"></i></div>
-              <h4><a href="">UI/UX & Graphics Design</a></h4>
-              <p>Create captivating user experiences with our expert UI/UX and graphic design services, tailored to your
-                brand.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- End Services Section -->
-
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-        <div class="text-center">
-          <h3>Ready to Elevate Your Digital Presence?</h3>
-          <p>
-            Join the ranks of our satisfied clients and embark on a journey to digital excellence. Let’s transform your
-            online presence together. Get in touch with us today!
-          </p>
-          <a class="cta-btn"
-            href="https://api.whatsapp.com/send?phone=6281210380940&text=Halo, dengan Admin BIZZAGI? Saya ingin konsultasi perihal proyek AI saya."
-            target="_blank">
-            Get Started</a>
-        </div>
-      </div>
-    </section>
-    <!-- End Cta Section -->
-
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Check our Portfolio</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-seo">SEO</li>
-              <li data-filter=".filter-campaign">Campaign</li>
-              <li data-filter=".filter-socmed">Social Media</li>
-              <li data-filter=".filter-web">Web Development</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/porto-3.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>100 Website Untuk UMKM</h4>
-                <p>Web development</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/porto-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                    title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="row">
+            <!-- Service 1 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon">
+                  <i class="fa-solid fa-bullhorn"></i>
                 </div>
+                <h4><a href="">Digital Marketing</a></h4>
+                <p>Elevate your brand with our tailored digital marketing strategies that guarantee impactful results.</p>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-campaign">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/porto-2.jpeg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>100 Website Untuk UMKM</h4>
-                <p>Digital Campaign</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/porto-2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                    title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            <!-- Service 2 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon">
+                  <i class="fa-brands fa-searchengin"></i>
                 </div>
+                <h4><a href="">SEO Optimization</a></h4>
+                <p>Enhance your online visibility with our expert SEO services, designed to drive traffic and growth.</p>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-seo">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/porto-1.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Souvia</h4>
-                <p>SEO Audit</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/porto-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                    title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            <!-- Service 3 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon">
+                  <i class="fa-solid fa-earth-americas"></i>
                 </div>
+                <h4><a href="">Web Development</a></h4>
+                <p>Get cutting-edge websites that offer seamless user experiences, aligning with your brand’s identity.</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/porto-4.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Individual Client</h4>
-                <p>Copywriting for portfolio</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/porto-4.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                    title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+          <div class="row mt-3">
+            <!-- Service 1 - Advertising Management -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon"><i class="fa-brands fa-adversal"></i></div>
+                <h4><a href="">Advertising Management</a></h4>
+                <p>Maximize your brand's impact with our comprehensive advertising management services, from strategy to execution.</p>
+              </div>
+            </div>
+
+            <!-- Service 2 - Email Marketing -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><i class="fa-solid fa-envelope-circle-check"></i></div>
+                <h4><a href="">Email Marketing</a></h4>
+                <p>Engage your audience with targeted, personalized email marketing campaigns that drive results.</p>
+              </div>
+            </div>
+
+            <!-- Service 3 - UI/UX & Graphics Design -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon"><i class="fa-solid fa-pen-fancy"></i></div>
+                <h4><a href="">UI/UX & Graphics Design</a></h4>
+                <p>Create captivating user experiences with our expert UI/UX and graphic design services, tailored to your brand.</p>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/porto-5.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Braincore</h4>
-                <p>Social media content</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/porto-5.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                    title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
-    <!-- End Portfolio Section -->
+      </section>
+      <!-- End Services Section -->
 
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
-        <div class="row no-gutters">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
-            data-aos="fade-right" data-aos-delay="100"></div>
-          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left"
-            data-aos-delay="100">
-            <div class="content d-flex flex-column justify-content-center">
-              <h3>Our Impact in Numbers</h3>
-              <p>
-                Discover how Bizzagi is transforming the digital landscape through our dedication, expertise, and
-                innovative solutions.
-              </p>
-              <div class="row">
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-emoji-smile"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2"
-                      class="purecounter"></span>
-                    <p>
-                      <strong>Happy Clients</strong> who have experienced significant growth and success with our
-                      digital solutions.
-                    </p>
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+          <div class="text-center">
+            <h3>Ready to Elevate Your Digital Presence?</h3>
+            <p>Join the ranks of our satisfied clients and embark on a journey to digital excellence. Let’s transform your online presence together. Get in touch with us today!</p>
+            <a class="cta-btn" href="https://api.whatsapp.com/send?phone=6281210380940&text=Halo, dengan Admin BIZZAGI? Saya ingin konsultasi perihal proyek AI saya." target="_blank"> Get Started</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Cta Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>Check our Portfolio</p>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-seo">SEO</li>
+                <li data-filter=".filter-campaign">Campaign</li>
+                <li data-filter=".filter-socmed">Social Media</li>
+                <li data-filter=".filter-web">Web Development</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-3.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>100 Website Untuk UMKM</h4>
+                  <p>Web development</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2"
-                      class="purecounter"></span>
-                    <p>
-                      <strong>Projects Completed</strong> with creativity, efficiency, and a focus on delivering
-                      results.
-                    </p>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-campaign">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-2.jpeg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>100 Website Untuk UMKM</h4>
+                  <p>Digital Campaign</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
-
-                <!-- Additional counts can be added here in a similar format -->
-
               </div>
             </div>
-            <!-- End .content-->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-seo">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-1.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Souvia</h4>
+                  <p>SEO Audit</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-4.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Individual Client</h4>
+                  <p>Copywriting for portfolio</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-5.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Braincore</h4>
+                  <p>Social media content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-5.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-6.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Algigod</h4>
+                  <p>Social media content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-6.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-7.jpeg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Fishinc</h4>
+                  <p>UI/UX Design</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-7.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-8.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>MyLips</h4>
+                  <p>Social Media Content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-8.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-9.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Sequis</h4>
+                  <p>Social Media Content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-9.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-10.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Sequis</h4>
+                  <p>Social Media Content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-10.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-11.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>IGF</h4>
+                  <p>Social Media Content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-11.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-12.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>HIMTI</h4>
+                  <p>Web UI Design</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-12.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-13.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Design Exploration</h4>
+                  <p>Travel Web UI Design</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-13.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-14.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Design Exploration</h4>
+                  <p>Web UI Design</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-14.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-15.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Design Exploration</h4>
+                  <p>Planner UI Design</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-15.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-16.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Design Exploration</h4>
+                  <p>Social Media Content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-16.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-17.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Wiradiputra</h4>
+                  <p>Social Media Content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-17.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-18.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Wiradiputra</h4>
+                  <p>Social Media Content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-18.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-19.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Seedhood</h4>
+                  <p>Social Media Content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-19.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-20.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>IKS</h4>
+                  <p>Social Media Content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-20.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-21.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Algigod</h4>
+                  <p>Social Media Content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-21.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-22.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Seedhood</h4>
+                  <p>Social Media Content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-22.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/porto-23.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Algigod</h4>
+                  <p>Social Media Content</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/porto-23.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+          <div class="row no-gutters">
+            <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+            <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+              <div class="content d-flex flex-column justify-content-center">
+                <h3>Our Impact in Numbers</h3>
+                <p>Discover how Bizzagi is transforming the digital landscape through our dedication, expertise, and innovative solutions.</p>
+                <div class="row">
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-emoji-smile"></i>
+                      <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2" class="purecounter"></span>
+                      <p><strong>Happy Clients</strong> who have experienced significant growth and success with our digital solutions.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-journal-richtext"></i>
+                      <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2" class="purecounter"></span>
+                      <p><strong>Projects Completed</strong> with creativity, efficiency, and a focus on delivering results.</p>
+                    </div>
+                  </div>
+
+                  <!-- Additional counts can be added here in a similar format -->
+                </div>
+              </div>
+              <!-- End .content-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- ======= Team Section ======= -->
+      <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Team</h2>
+            <p>Check our Team</p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/eric.jpeg" class="img-fluid" alt="Eric" />
+                  <div class="social">
+                    <a href="https://x.com/algonacci"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Eric Julianto</h4>
+                  <span>Project Manager</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/alifio.png" class="img-fluid" alt="Alifio" />
+                  <div class="social">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Alifio Wibisono</h4>
+                  <span>Marketing Officer</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/yahay.png" class="img-fluid" alt="Yahay" />
+                  <div class="social">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Muchtar Yahya</h4>
+                  <span>Creative Officer</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/doni.jpg" class="img-fluid" alt="Doni" />
+                  <div class="social">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Doni Wirawan</h4>
+                  <span>Graphic Designer</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/idham.png" class="img-fluid" alt="Idham" />
+                  <div class="social">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Idham Ar Rasyid</h4>
+                  <span>Interaction Designer</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/daffa.png" class="img-fluid" alt="Idham" />
+                  <div class="social">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Daffa Yusuf</h4>
+                  <span>Interaction Designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End Team Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>Contact Us</p>
+          </div>
+
+          <div>
+            <iframe
+              style="border: 0; width: 100%; height: 270px"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6591830399225!2d106.78929841413706!3d-6.176359362240449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65f73d4c9cb%3A0x144ec1e5914e9cc3!2sAPL%20Tower%2C%20RT.3%2FRW.5%2C%20Tj.%20Duren%20Sel.%2C%20Kec.%20Grogol%20petamburan%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011470!5e0!3m2!1sid!2sid!4v1640794746998!5m2!1sid!2sid"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>Jl. Letjen S. Parman No.28</p>
+                  <p>Grogol Petamburan</p>
+                  <p>Kota Jakarta Barat</p>
+                  <p>Daerah Khusus Ibukota Jakarta 11470</p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>bizzagi.id@gmail.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+62 821 2560 9413</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>Bizzagi<span>.</span></h3>
+                <p>Algo Network Indonesia</p>
+                <p>PT. ALGONACCI SOBAT NUSANTARA</p>
+                <br />
+                <p>
+                  Jl. Letjen S. Parman No.28 <br />
+                  Grogol Petamburan Kota Jakarta Barat Daerah Khusus Ibukota Jakarta 11470
+                  <br /><br />
+                  <strong>Phone:</strong> +62 821 2560 9413<br />
+                  <strong>Email:</strong> bizzagi.id@gmail.com<br />
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                  <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Careers</a></li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Search Engine Optimization</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">UI/UX Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Market Research</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>Berlangganan email untuk update info terbaru dari kami</p>
+              <form action="" method="post"><input type="email" name="email" /><input type="submit" value="Subscribe" /></form>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Counts Section -->
 
-
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Team</h2>
-          <p>Check our Team</p>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/eric.jpeg" class="img-fluid" alt="Eric" />
-                <div class="social">
-                  <a href="https://x.com/algonacci"><i class="bi bi-twitter"></i></a>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Eric Julianto</h4>
-                <span>Project Manager</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/alifio.png" class="img-fluid" alt="Alifio" />
-                <div class="social">
-                  <a href="#"><i class="bi bi-twitter"></i></a>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Alifio Wibisono</h4>
-                <span>Marketing Officer</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/doni.jpg" class="img-fluid" alt="Doni" />
-                <div class="social">
-                  <a href="#"><i class="bi bi-twitter"></i></a>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Doni Wirawan</h4>
-                <span>Graphic Designer</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- End Team Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
-        </div>
-
-        <div>
-          <iframe style="border: 0; width: 100%; height: 270px"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6591830399225!2d106.78929841413706!3d-6.176359362240449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65f73d4c9cb%3A0x144ec1e5914e9cc3!2sAPL%20Tower%2C%20RT.3%2FRW.5%2C%20Tj.%20Duren%20Sel.%2C%20Kec.%20Grogol%20petamburan%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011470!5e0!3m2!1sid!2sid!4v1640794746998!5m2!1sid!2sid"
-            frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Jl. Letjen S. Parman No.28</p>
-                <p>Grogol Petamburan</p>
-                <p>Kota Jakarta Barat</p>
-                <p>Daerah Khusus Ibukota Jakarta 11470</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>bizzagi.id@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+62 821 2560 9413</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your message has been sent. Thank you!
-                </div>
-              </div>
-              <div class="text-center">
-                <button type="submit">Send Message</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Contact Section -->
-  </main>
-  <!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>Bizzagi<span>.</span></h3>
-              <p>Algo Network Indonesia</p>
-              <p>PT. ALGONACCI SOBAT NUSANTARA</p>
-              <br />
-              <p>
-                Jl. Letjen S. Parman No.28 <br />
-                Grogol Petamburan Kota Jakarta Barat Daerah Khusus Ibukota
-                Jakarta 11470
-                <br /><br />
-                <strong>Phone:</strong> +62 821 2560 9413<br />
-                <strong>Email:</strong> bizzagi.id@gmail.com<br />
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li>
-                <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i> <a href="#">Careers</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Terms of service</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Privacy policy</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li>
-                <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Web Development</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Product Management</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Graphic Design</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Search Engine Optimization</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">UI/UX Design</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Market Research</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Berlangganan email untuk update info terbaru dari kami</p>
-            <form action="" method="post">
-              <input type="email" name="email" /><input type="submit" value="Subscribe" />
-            </form>
-          </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>Bizzagi</span></strong
+          >. All Rights Reserved
         </div>
       </div>
-    </div>
+    </footer>
+    <!-- End Footer -->
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Bizzagi</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
